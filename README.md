@@ -4,7 +4,7 @@ A Spring Boot application that processes receipts and calculates reward points b
 
 ## How to Run the Project
 
-### Using Docker
+### Using Docker Compose
 
 1. Make sure you have Docker and Docker Compose installed
 2. Clone the repository
@@ -14,6 +14,21 @@ A Spring Boot application that processes receipts and calculates reward points b
    docker-compose up --build
    ```
 5. The application will be available at `http://localhost:8080`
+
+### Using Docker
+
+1. Make sure you have Docker installed
+2. Clone the repository
+3. Navigate to the project root directory
+4. Build the Docker image:
+   ```bash
+   docker build -t receipt-processor .
+   ```
+5. Run the container:
+   ```bash
+   docker run -p 8080:8080 receipt-processor
+   ```
+6. The application will be available at `http://localhost:8080`
 
 ### Using Java and Maven
 
